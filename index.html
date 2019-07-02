@@ -1,821 +1,945 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Silph League Assets</title>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Silph League Assets</title>
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        
-        <style>
-        
-            @font-face {
-                font-family: 'texgyreadventorregular';
-                src: url('./fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.eot');
-                src: url('./fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
-                     url('./fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.woff') format('woff'),
-                     url('./fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.ttf') format('truetype'),
-                     url('./fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg');
-                font-weight: normal;
-                font-style: normal;
-                text-transform:uppercase;
-            }
-            @font-face {
-                font-family: 'texgyreadventorbold';
-                src: url('./fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.eot');
-                src: url('./fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.eot?#iefix') format('embedded-opentype'),
-                     url('./fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.woff') format('woff'),
-                     url('./fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.ttf') format('truetype'),
-                     url('./fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.svg#texgyreadventorbold') format('svg');
-                font-weight: normal;
-                font-style: normal;
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-            }
-            @font-face {
-                font-family: 'texgyreadventoritalic';
-                src: url('./fonts/texgyreadventor_italic_macroman/texgyreadventor-italic-webfont.eot');
-                src: url('./fonts/texgyreadventor_italic_macroman/texgyreadventor-italic-webfont.eot?#iefix') format('embedded-opentype'),
-                     url('./fonts/texgyreadventor_italic_macroman/texgyreadventor-italic-webfont.woff') format('woff'),
-                     url('./fonts/texgyreadventor_italic_macroman/texgyreadventor-italic-webfont.ttf') format('truetype'),
-                     url('./fonts/texgyreadventor_italic_macroman/texgyreadventor-italic-webfont.svg#texgyreadventoritalic') format('svg');
-                font-weight: normal;
-                font-style: normal;
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-            }
-            @font-face {
-                font-family: 'nexa_rust_sansblack';
-                src: url('./fonts/nexarustsans-black-webfont.woff2') format('woff2'),
-                     url('./fonts/nexarustsans-black-webfont.woff') format('woff');
-                font-weight: normal;
-                font-style: normal;
+  <style>
+    @font-face {
+      font-family: 'texgyreadventorregular';
+      src: url('./fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.eot');
+      src: url('./fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.woff') format('woff'),
+        url('./fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.ttf') format('truetype'),
+        url('./fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      text-transform: uppercase;
+    }
 
-            }	
-        
-        
-        
-            html { background:url(https://assets.thesilphroad.com/img/background1.jpg);background-size:cover;background-attachment:fixed; }
-            body { background:transparent; }
-            
-            h1,h2,h3,h4,h5,h6 {
-                font-family: 'texgyreadventorregular';
-                text-transform:uppercase;
-                letter-spacing:.2em
-            }
-            h1 { font-size: 22px; }
-            h5 {
-                font-family: 'texgyreadventorbold';
-                letter-spacing: .15em;
-                font-size: 17px;
-            }
-            
-            a { color: #E4C049; }
-            a:hover { color: #F1CC55; }
-            
-            
-            .assetGroup { 
-                text-align:left;
-                padding:0 20px;
-                display:flex;
-                flex-flow: wrap; 
-                justify-content: center;
-            }
-            .assetGroup a { 
-                display: inline-block;
-                background: rgba(255, 255, 255, 0.13);
-                padding: 10px 20px;
-                border-radius: 4px;
-                margin: 5px;
-                max-width:220px;
-                text-align:center;
-            }
-            .assetGroup a img {
-                max-height: 200px;
-                max-width:180px;
-                display:inline-block;
-            }
-            .assetGroup a img.fileIcon { height:140px; }
-            .assetGroup a label {
-                display:block;
-                text-align:center;
-                padding:10px 3px 0;
-            }
-            
-        </style>
-    </head>
-    <body>
-    
-        <div class="container" style="margin:30px auto;padding: 0;border-top: 10px dashed rgba(61, 61, 61, 0.72);max-width:680px;">
-            <div class="row">
-                <div class="col-md-12 text-center" style="box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.23);padding: 0;">
-            
-                    <div class="" style="overflow:hidden;height: 230px;position: relative;z-index: 1;">
-                        <img src="https://thesilphroad.com/img/silph-league-logo.png" style="height: 180px;z-index: 1;position: relative;margin:23px 0 0;filter: drop-shadow(0px 4px 4px #652f2e);color: #652f2e;"><div style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;background: url(https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?w=1260&amp;h=750&amp;dpr=2&amp;auto=compress&amp;cs=tinysrgb);background-size:cover;background-position: 50% 50%;z-index: 0;filter: invert(1);"></div>
-                        <div style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;background: rgba(147, 12, 12, 0.7019607843137254);z-index: 0;"></div>
-                    </div>
-                    
-                    <div class="panel" style="width: 100%;border-radius:0;margin:0;border: none;padding: 20px;background: #3d3d3d;color: #f3f2eb;font-size: 13px;line-height: 1.2em;letter-spacing: 0;text-shadow:none;">
-                    
-                      <h2 style="margin: 0;font-size:36px;letter-spacing:.1em;line-height:.9em;font-family:'texgyreadventorregular';">
-                        League Downloads <br>
-                        <span style="font-size:23px;letter-spacing:.3em;font-family:'texgyreadventorbold';text-indent:-0.4em;display:inline-block;">For Community Leaders</span>
-                      </h2>
-                      
-                      <hr style="margin: 20px 25px 25px 25px;border-color: #555;"><img src="https://thesilphroad.com/img/icons/badge.png" style="height: 80px;float: left;margin: 5px 20px 10px;">
-                        <h3 style="font-family: 'texgyreadventorbold';color: #e4c049;margin-bottom: 14px;font-size: 16px;text-align: left;">
-                          Free Graphics for Your Meetups and More!
-                        </h3>
-                        <p style="margin-bottom:10px;text-align: left;">
-                          Are you looking to create promotional graphics or swag for your local GO community? As a <i>Silph League</i> member, you may use
-                          the following free graphics in your creations!
-                        </p>
-                        <p style="margin-bottom:10px;text-align: left;">
-                          These resources are provided under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA</a>
-                          license; ie, for non-commercial use only.  We also ask that these assets be used in the spirit of the League!
-                        </p>
-                        
-                        <hr style="margin:25px;border-color: #555;">
-                        
-                        <div class="text-left">
+    @font-face {
+      font-family: 'texgyreadventorbold';
+      src: url('./fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.eot');
+      src: url('./fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.woff') format('woff'),
+        url('./fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.ttf') format('truetype'),
+        url('./fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.svg#texgyreadventorbold') format('svg');
+      font-weight: normal;
+      font-style: normal;
 
-                          <h5>League Event: <span style="font-family:'texgyreadventorregular';">July 2019 Community Day Meetup</span></h5>
+    }
 
-                          <p>
-                            The <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on July 21, 2019 is featuring the water Pokémon Mudkip. There will be 3x catch XP, three hour lures, and an increased chance to score a shiny Mudkip!
-                          </p>
+    @font-face {
+      font-family: 'texgyreadventoritalic';
+      src: url('./fonts/texgyreadventor_italic_macroman/texgyreadventor-italic-webfont.eot');
+      src: url('./fonts/texgyreadventor_italic_macroman/texgyreadventor-italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/texgyreadventor_italic_macroman/texgyreadventor-italic-webfont.woff') format('woff'),
+        url('./fonts/texgyreadventor_italic_macroman/texgyreadventor-italic-webfont.ttf') format('truetype'),
+        url('./fonts/texgyreadventor_italic_macroman/texgyreadventor-italic-webfont.svg#texgyreadventoritalic') format('svg');
+      font-weight: normal;
+      font-style: normal;
 
-                          <div class="assetGroup">
-                            <a href="./assets/2019-07-21-community-day/badge-large.png" target="_blank">
-                              <img src="./assets/2019-07-21-community-day/badge-large.png">
-                              <label>badge-large.png</label>
-                            </a>
-                            <a href="./assets/2019-07-21-community-day/badge.png" target="_blank">
-                              <img src="./assets/2019-07-21-community-day/badge.png">
-                              <label>badge.png</label>
-                            </a>
-                            <a href="./assets/2019-07-21-community-day/shiny-badge.jpg" target="_blank">
-                              <img src="./assets/2019-07-21-community-day/shiny-badge.jpg">
-                              <label>shiny-badge.jpg</label>
-                            </a>
-                            <a href="./assets/2019-07-21-community-day/shiny-badge.psd" target="_blank">
-                              <img src="./img/photoshop-icon.png" class="fileIcon">
-                              <label>shiny-badge.psd</label>
-                            </a>
-                          </div>
+    }
 
-                          <hr style="margin:25px;border-color: #555;">
-                        
-                          <div class="text-left">
-  
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">Dortmund Go Fest 2019</span></h5>
-  
-                            <p>
-                                The <a href="https://pokemongolive.com/events/fest/dortmund/" target="_blank">2019 Dortmund GoFest</a> will be held July 4 through 7 in Westfalenpark Park. Special research, crazy Pokémon spawns, increased shiny rates, and the Mythical Pokémon Jirachi are all featured during this event.
-                            </p>
-  
-                            <div class="assetGroup">
-                              <a href="./assets/2019-07-04-go-fest-dortmund/badge-large.png" target="_blank">
-                                <img src="./assets/2019-07-04-go-fest-dortmund/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2019-07-04-go-fest-dortmund/badge.png" target="_blank">
-                                <img src="./assets/2019-07-04-go-fest-dortmund/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2019-07-04-go-fest-dortmund/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2019-07-04-go-fest-dortmund/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2019-07-04-go-fest-dortmund/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                            </div>
-  
-                            <hr style="margin:25px;border-color: #555;">
-                          
-                          <h5>League Event: <span style="font-family:'texgyreadventorregular';">Chicago Go Fest 2019</span></h5>
+    @font-face {
+      font-family: 'nexa_rust_sansblack';
+      src: url('./fonts/nexarustsans-black-webfont.woff2') format('woff2'),
+        url('./fonts/nexarustsans-black-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
 
-                          <p>
-                            The <a href="https://pokemongolive.com/events/fest/chicago/" target="_blank">2019 Chicago GoFest</a> will be held June 13 through 16 in Grant Park. Special research, crazy Pokémon spawns, increased shiny rates, and the Mythical Pokémon Jirachi are all featured during this event.
-                          </p>
+    }
 
-                          <div class="assetGroup">
-                            <a href="./assets/2019-06-13-go-fest-chicago/badge-large.png" target="_blank">
-                              <img src="./assets/2019-06-13-go-fest-chicago/badge-large.png">
-                              <label>badge-large.png</label>
-                            </a>
-                            <a href="./assets/2019-06-13-go-fest-chicago/badge.png" target="_blank">
-                              <img src="./assets/2019-06-13-go-fest-chicago/badge.png">
-                              <label>badge.png</label>
-                            </a>
-                            <a href="./assets/2019-06-13-go-fest-chicago/shiny-badge.jpg" target="_blank">
-                              <img src="./assets/2019-06-13-go-fest-chicago/shiny-badge.jpg">
-                              <label>shiny-badge.jpg</label>
-                            </a>
-                            <a href="./assets/2019-06-13-go-fest-chicago/shiny-badge.psd" target="_blank">
-                              <img src="./img/photoshop-icon.png" class="fileIcon">
-                              <label>shiny-badge.psd</label>
-                            </a>
-                          </div>
+    html {
+      background: url(https://assets.thesilphroad.com/img/background1.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+    }
 
-                          <hr style="margin:25px;border-color: #555;">
-                          
-                          <h5>League Event: <span style="font-family:'texgyreadventorregular';">June 2019 Community Day Meetup</span></h5>
+    body {
+      background: transparent;
+    }
 
-                            <p>
-                              The <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on June 8, 2019 will feature an increased Slakoth spawn rate, with higher chances to get it in it's shiny form. Also, special bonuses will be live during the Community Day window: 1/4 Egg hatch distance and 3 hour lures.
-                            </p>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'texgyreadventorregular';
+      text-transform: uppercase;
+      letter-spacing: .2em
+    }
 
-                            <div class="assetGroup">
-                              <a href="./assets/2019-06-08-community-day/badge-large.png" target="_blank">
-                                <img src="./assets/2019-06-08-community-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2019-06-08-community-day/badge.png" target="_blank">
-                                <img src="./assets/2019-06-08-community-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2019-06-08-community-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2019-06-08-community-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2019-06-08-community-day/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                            </div>
+    h1 {
+      font-size: 22px;
+    }
 
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">May 2019 Community Day Meetup</span></h5>
+    h5 {
+      font-family: 'texgyreadventorbold';
+      letter-spacing: .15em;
+      font-size: 17px;
+    }
 
-                            <p>
-                              The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on May 19, 2019 will feature boosted Torchic spawns and an increased chance of shiny Torchic! Also, special bonuses will be live during the Community Day window: 3x catch Stardust and and 3 hour lures.
-                            </p>
-                            
-                            <div class="assetGroup">
-                              <a href="./assets/2019-05-19-community-day/badge-large.png" target="_blank">
-                                <img src="./assets/2019-05-19-community-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2019-05-19-community-day/badge.png" target="_blank">
-                                <img src="./assets/2019-05-19-community-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2019-05-19-community-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2019-05-19-community-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2019-05-19-community-day/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                            </div>
+    a {
+      color: #E4C049;
+    }
 
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">Earth Day 2019 Meetups</span></h5>
-                            
-                            <p>
-                              The in-game <a href="https://nianticlabs.com/blog/earthday2019/" target="_blank">Global Community Day</a> from April 13 - 28, 2019 will give Pokemon GO and Ingress players a chance to earn unlockables depending on how many volunteers participate in a cleanup event!
-                            </p>
-                            
-                            <div class="assetGroup">
-                              <a href="./assets/2019-04-13-earth-day/badge-large.png" target="_blank">
-                                <img src="./assets/2019-04-13-earth-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2019-04-13-earth-day/badge.png" target="_blank">
-                                <img src="./assets/2019-04-13-earth-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2019-04-13-earth-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2019-04-13-earth-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                            </div>
+    a:hover {
+      color: #F1CC55;
+    }
 
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">April 2019 Community Day Meetup</span></h5>
-                            
-                            <p>
-                              The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on April 13, 2019 will feature boosted Bagon spawns and an assumedly increased chance of shiny Bagon! Also, special bonuses will be live during the Community Day window: 3x Catch XP and 3 hour lures.
-                            </p>
-                            
-                            <div class="assetGroup">
-                              <a href="./assets/2019-04-13-community-day/badge-large.png" target="_blank">
-                                <img src="./assets/2019-04-13-community-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2019-04-13-community-day/badge.png" target="_blank">
-                                <img src="./assets/2019-04-13-community-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2019-04-13-community-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2019-04-13-community-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2019-04-13-community-day/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                            </div>
 
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">March 2019 Community Day Meetup</span></h5>
-                            
-                            <p>
-                              The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on March 23, 2019 will feature boosted Treecko spawns and an increased chance of shiny Treecko! Also, special bonuses will be live during the Community Day window: 1/4 Egg hatch distance and 3 hour lures.
-                            </p>
-                            
-                            <div class="assetGroup">
-                              <a href="./assets/2019-03-23-community-day/badge-large.png" target="_blank">
-                                <img src="./assets/2019-03-23-community-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2019-03-23-community-day/badge.png" target="_blank">
-                                <img src="./assets/2019-03-23-community-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2019-03-23-community-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2019-03-23-community-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2019-03-23-community-day/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                            </div>
+    .assetGroup {
+      text-align: left;
+      padding: 0 20px;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+    }
 
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">February 2019 Community Day Meetup</span></h5>
+    .assetGroup a {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.13);
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin: 5px;
+      max-width: 220px;
+      text-align: center;
+    }
 
-                            <p>
-                              The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on February 16, 2019 will feature boosted Swinub spawns and an increased chance of shiny Swinub! Also, special bonuses will be live during the Community Day window: 3x catch startdust and and 3 hour lures.
-                            </p>
-                            
-                            <div class="assetGroup">
-                              <a href="./assets/2019-02-01-community-day/badge-large.png" target="_blank">
-                                <img src="./assets/2019-02-01-community-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2019-02-01-community-day/badge.png" target="_blank">
-                                <img src="./assets/2019-02-01-community-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2019-02-01-community-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2019-02-01-community-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2019-02-01-community-day/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                            </div>
+    .assetGroup a img {
+      max-height: 200px;
+      max-width: 180px;
+      display: inline-block;
+    }
 
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">January 2019 Community Day Meetup</span></h5>
-                            
-                            <p>
-                              The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on January 12, 2019 will feature boosted Totodile spawns and an assumedly increased chance of shiny Totodile!. Also, special bonuses will be live during the Community Day window: 1/4 egg hatch distance and and 3 hour lures.
-                            </p>
-                            
-                            <div class="assetGroup">
-                              <a href="./assets/2019-01-12-community-day/badge-large.png" target="_blank">
-                                <img src="./assets/2019-01-12-community-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2019-01-12-community-day/badge.png" target="_blank">
-                                <img src="./assets/2019-01-12-community-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2019-01-12-community-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2019-01-12-community-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2019-01-12-community-day/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                            </div>
+    .assetGroup a img.fileIcon {
+      height: 140px;
+    }
 
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">December 2018 Community Day Meetup</span></h5>
-                            
-                            <p>
-                              The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> from November 30 to December 2, 2018 will feature all 11 species featured in 2018 Community days, including their special moves. Also, on December 1 (per the usual Community Day schedule) special bonuses will be live during the Community Day window: 2x catch XP, 2x catch stardust, half egg distances, and 3 hour lures.
-                            </p>
-                            
-                            <div class="assetGroup">
-                              <a href="./assets/2019-01-12-community-day/badge-large.png" target="_blank">
-                                <img src="./assets/2018-12-01-community-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2018-12-01-community-day/badge.png" target="_blank">
-                                <img src="./assets/2018-12-01-community-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2018-12-01-community-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2018-12-01-community-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2018-12-01-community-day/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                            </div>
+    .assetGroup a label {
+      display: block;
+      text-align: center;
+      padding: 10px 3px 0;
+    }
+  </style>
+</head>
 
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">November 2018 Community Day Meetup</span></h5>
-                            
-                            <p>
-                              The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on November 10, 2018 will feature a special Cyndaquil, 2x hatch XP, 2x catch stardust, and likely an increased shiny Cyndaquil encounter rate.
-                            </p>
-                            
-                            <div class="assetGroup">
-                              <a href="./assets/2018-11-10-community-day/badge-large.png" target="_blank">
-                                <img src="./assets/2018-11-10-community-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2018-11-10-community-day/badge.png" target="_blank">
-                                <img src="./assets/2018-11-10-community-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2018-11-10-community-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2018-11-10-community-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2018-11-10-community-day/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                              <a href="./assets/2018-11-10-community-day/meetup-announcement-template.jpg" target="_blank">
-                                <img src="./assets/2018-11-10-community-day/meetup-announcement-template.jpg">
-                                <label>meetup-announcement-template.jpg</label>
-                              </a>
-                              <a href="./assets/2018-11-10-community-day/meetup-announcement-template.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>meetup-announcement-template.psd</label>
-                              </a>
-                            </div>
+<body>
 
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">October 2018 Community Day Meetup</span></h5>
-                            
-                            <p>
-                              The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on October 21, 2018 will feature a special Beldum, 1/4 Egg hatch distance, 3-hour lures, and likely an increased shiny Beldum encounter rate.
-                            </p>
-                            
-                            <div class="assetGroup">
-                              <a href="./assets/2018-10-21-community-day/badge-large.png" target="_blank">
-                                <img src="./assets/2018-10-21-community-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2018-10-21-community-day/badge.png" target="_blank">
-                                <img src="./assets/2018-10-21-community-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2018-10-21-community-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2018-10-21-community-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2018-10-21-community-day/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                              <a href="./assets/2018-10-21-community-day/meetup-announcement-template.jpg" target="_blank">
-                                <img src="./assets/2018-10-21-community-day/meetup-announcement-template.jpg">
-                                <label>meetup-announcement-template.jpg</label>
-                              </a>
-                              <a href="./assets/2018-10-21-community-day/meetup-announcement-template.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>meetup-announcement-template.psd</label>
-                              </a>
-                            </div>
+  <div class="container"
+    style="margin:30px auto;padding: 0;border-top: 10px dashed rgba(61, 61, 61, 0.72);max-width:680px;">
+    <div class="row">
+      <div class="col-md-12 text-center" style="box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.23);padding: 0;">
 
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">September 2018 Community Day Meetup</span></h5>
-                            
-                            <p>
-                              The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on September 22, 2018 will feature a special Chikorita, 3-hour lures, 3x catch XP, and likely an increased shiny Chikorita encounter rate.
-                            </p>
-                            
-                            <div class="assetGroup">
-                              <a href="./assets/2018-09-22-community-day/badge-large.png" target="_blank">
-                                <img src="./assets/2018-09-22-community-day/badge-large.png">
-                                <label>badge-large.png</label>
-                              </a>
-                              <a href="./assets/2018-09-22-community-day/badge.png" target="_blank">
-                                <img src="./assets/2018-09-22-community-day/badge.png">
-                                <label>badge.png</label>
-                              </a>
-                              <a href="./assets/2018-09-22-community-day/shiny-badge.jpg" target="_blank">
-                                <img src="./assets/2018-09-22-community-day/shiny-badge.jpg">
-                                <label>shiny-badge.jpg</label>
-                              </a>
-                              <a href="./assets/2018-09-22-community-day/shiny-badge.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>shiny-badge.psd</label>
-                              </a>
-                              <a href="./assets/2018-09-22-community-day/meetup-announcement-template.jpg" target="_blank">
-                                <img src="./assets/2018-09-22-community-day/meetup-announcement-template.jpg">
-                                <label>meetup-announcement-template.jpg</label>
-                              </a>
-                              <a href="./assets/2018-09-22-community-day/meetup-announcement-template.psd" target="_blank">
-                                <img src="./img/photoshop-icon.png" class="fileIcon">
-                                <label>meetup-announcement-template.psd</label>
-                              </a>
-                            </div>
-
-                            <hr style="margin:25px;border-color: #555;">
-                            
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">August 2018 Community Day Meetup</span></h5>
-                            <p>
-                                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on August 11 and 12, 2018 will feature a special Eevee, 3-hour lures, 3x catch stardust, and likely an increased shiny Eevee encounter rate.
-                            </p>
-                            <div class="assetGroup">
-                                <a href="./assets/2018-08-11-community-day/badge-large.png" target="_blank">
-                                    <img src="./assets/2018-08-11-community-day/badge-large.png">
-                                    <label>badge-large.png</label>
-                                </a>
-                                <a href="./assets/2018-08-11-community-day/badge.png" target="_blank">
-                                    <img src="./assets/2018-08-11-community-day/badge.png">
-                                    <label>badge.png</label>
-                                </a>
-                                <a href="./assets/2018-08-11-community-day/shiny-badge.jpg" target="_blank">
-                                    <img src="./assets/2018-08-11-community-day/shiny-badge.jpg">
-                                    <label>shiny-badge.jpg</label>
-                                </a>
-                                <a href="./assets/2018-08-11-community-day/shiny-badge.psd" target="_blank">
-                                    <img src="./img/photoshop-icon.png" class="fileIcon">
-                                    <label>shiny-badge.psd</label>
-                                </a>
-                                <a href="./assets/2018-08-11-community-day/meetup-announcement-template.jpg" target="_blank">
-                                    <img src="./assets/2018-08-11-community-day/meetup-announcement-template.jpg">
-                                    <label>meetup-announcement-template.jpg</label>
-                                </a>
-                                <a href="./assets/2018-08-11-community-day/meetup-announcement-template.psd" target="_blank">
-                                    <img src="./img/photoshop-icon.png" class="fileIcon">
-                                    <label>meetup-announcement-template.psd</label>
-                                </a>
-                            </div>
-
-                            <hr style="margin:25px;border-color: #555;">
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">July 2018 Community Day Meetup</span></h5>
-                            <p>
-                                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on July 8, 2018 will feature a special Squirtle, 3-hour lures, 1/4 egg hatching distance, and possibly an increased shiny Squirtle encounter rate.
-                            </p>
-                            <div class="assetGroup">
-                                <a href="./assets/2018-07-08-community-day/badge-large.png" target="_blank">
-                                    <img src="./assets/2018-07-08-community-day/badge-large.png">
-                                    <label>badge-large.png</label>
-                                </a>
-                                <a href="./assets/2018-07-08-community-day/badge-special-large.png" target="_blank">
-                                    <img src="./assets/2018-07-08-community-day/badge-special-large.png">
-                                    <label>badge-special-large.png</label>
-                                </a>
-                                <a href="./assets/2018-07-08-community-day/badge.png" target="_blank">
-                                    <img src="./assets/2018-07-08-community-day/badge.png">
-                                    <label>badge.png</label>
-                                </a>
-                                <a href="./assets/2018-07-08-community-day/badge-special.png" target="_blank">
-                                    <img src="./assets/2018-07-08-community-day/badge-special.png">
-                                    <label>badge-special.png</label>
-                                </a>
-                                <a href="./assets/2018-07-08-community-day/shiny-badge-blastoise.jpg" target="_blank">
-                                    <img src="./assets/2018-07-08-community-day/shiny-badge-blastoise.jpg">
-                                    <label>shiny-badge-blastoise.jpg</label>
-                                </a>
-                                <a href="./assets/2018-07-08-community-day/shiny-badges.jpg" target="_blank">
-                                    <img src="./assets/2018-07-08-community-day/shiny-badges.jpg">
-                                    <label>shiny-badges.jpg</label>
-                                </a>
-                                <a href="./assets/2018-07-08-community-day/shiny-badges.psd" target="_blank">
-                                    <img src="./img/photoshop-icon.png" class="fileIcon">
-                                    <label>shiny-badges.psd</label>
-                                </a>
-                            </div>
-
-                            <hr style="margin:25px;border-color: #555;">
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">June 2018 Community Day Meetup</span></h5>
-                            <p>
-                                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on June 16, 2018 will feature a special Larvitar, 3-hour lures, 3x catch XP, and possibly an increased shiny Larvitar encounter rate.
-                            </p>
-                            <div class="assetGroup">
-                                <a href="./assets/2018-06-16-community-day/badge.png" target="_blank">
-                                    <img src="./assets/2018-06-16-community-day/badge.png">
-                                    <label>badge.png</label>
-                                </a>
-                                <a href="./assets/2018-06-16-community-day/badge-large.png" target="_blank">
-                                    <img src="./assets/2018-06-16-community-day/badge-large.png">
-                                    <label>badge-large.png</label>
-                                </a>
-                                <a href="./assets/2018-06-16-community-day/shiny-badge.jpg" target="_blank">
-                                    <img src="./assets/2018-06-16-community-day/shiny-badge.jpg">
-                                    <label>shiny-badge.png</label>
-                                </a>
-                                <a href="./assets/2018-06-16-community-day/meetup-announcement-template.jpg" target="_blank">
-                                    <img src="./assets/2018-06-16-community-day/meetup-announcement-template.jpg">
-                                    <label>meetup-announcement-template.jpg</label>
-                                </a>
-                                <a href="./assets/2018-06-16-community-day/meetup-announcement-template.psd" target="_blank">
-                                    <img src="./img/photoshop-icon.png" class="fileIcon">
-                                    <label>meetup-announcement-template.psd</label>
-                                </a>
-                            </div>
-
-                            <hr style="margin:25px;border-color: #555;">
-
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">May 2018 Community Day Meetup</span></h5>
-                            <p>
-                                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on May 19, 2018 will feature a special Charmander, 3-hour lures, 3x catch stardust, and possibly an increased shiny Charmander encounter rate.
-                            </p>
-                            <div class="assetGroup">
-                                <a href="./assets/2018-05-19-community-day/badge.png" target="_blank">
-                                    <img src="./assets/2018-05-19-community-day/badge.png">
-                                    <label>badge.png</label>
-                                </a>
-                                <a href="./assets/2018-05-19-community-day/badge-large.png" target="_blank">
-                                    <img src="./assets/2018-05-19-community-day/badge-large.png">
-                                    <label>badge-large.png</label>
-                                </a>
-                                <a href="./assets/2018-05-19-community-day/shiny-badge.jpg" target="_blank">
-                                    <img src="./assets/2018-05-19-community-day/shiny-badge.jpg">
-                                    <label>shiny-badge.png</label>
-                                </a>
-                                <a href="./assets/2018-05-19-community-day/shiny-badge.psd" target="_blank">
-                                    <img src="./img/photoshop-icon.png" class="fileIcon">
-                                    <label>shiny-badge.psd</label>
-                                </a>
-                            </div>
-
-                            <hr style="margin:25px;border-color: #555;">
-
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">April 2018 Community Day Meetup</span></h5>
-                            <p>
-                                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on April 15, 2018 will feature a special Mareep, 3-hour lures, 1/4 egg hatch distance, and possibly an increased shiny Mareep encounter rate.
-                            </p>
-                            <div class="assetGroup">
-                                <a href="./assets/2018-04-15-community-day/badge.png" target="_blank">
-                                    <img src="./assets/2018-04-15-community-day/badge.png">
-                                    <label>badge.png</label>
-                                </a>
-                                <a href="./assets/2018-04-15-community-day/badge-large.png" target="_blank">
-                                    <img src="./assets/2018-04-15-community-day/badge-large.png">
-                                    <label>badge-large.png</label>
-                                </a>
-                                <a href="./assets/2018-04-15-community-day/shiny-badge.jpg" target="_blank">
-                                    <img src="./assets/2018-04-15-community-day/shiny-badge.jpg">
-                                    <label>shiny-badge.png</label>
-                                </a>
-                                <a href="./assets/2018-04-15-community-day/shiny-badge.psd" target="_blank">
-                                    <img src="./img/photoshop-icon.png" class="fileIcon">
-                                    <label>shiny-badge.psd</label>
-                                </a>
-                            </div>
-
-                            <hr style="margin:25px;border-color: #555;">
-
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">March 2018 Community Day Meetup</span></h5>
-                            <p>
-                                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on March 25, 2018 featured a special Bulbasaur, 3-hour lures, 3x catch XP, and possibly an increased shiny Bulbasaur encounter rate.
-                            </p>
-                            <div class="assetGroup">
-                                <a href="./assets/2018-03-25-community-day/badge.png" target="_blank">
-                                    <img src="./assets/2018-03-25-community-day/badge.png">
-                                    <label>badge.png</label>
-                                </a>
-                                <a href="./assets/2018-03-25-community-day/badge-large.png" target="_blank">
-                                    <img src="./assets/2018-03-25-community-day/badge-large.png">
-                                    <label>badge-large.png</label>
-                                </a>
-                                <a href="./assets/2018-03-25-community-day/shiny-badge.jpg" target="_blank">
-                                    <img src="./assets/2018-03-25-community-day/shiny-badge.jpg">
-                                    <label>shiny-badge.png</label>
-                                </a>
-                                <a href="./assets/2018-03-25-community-day/shiny-badge.psd" target="_blank">
-                                    <img src="./img/photoshop-icon.png" class="fileIcon">
-                                    <label>shiny-badge.psd</label>
-                                </a>
-                            </div>
-
-                            <hr style="margin:25px;border-color: #555;">
-
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">February 2018 Community Day Meetup</span></h5>
-                            <p>
-                                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on February 24, 2018 featured a special Dratini, 3-hour lures, 3x catch stardust, and an increased shiny Dratini encounter rate.
-                            </p>
-                            <div class="assetGroup">
-                                <a href="./assets/2018-02-24-community-day/badge.png" target="_blank">
-                                    <img src="./assets/2018-02-24-community-day/badge.png">
-                                    <label>badge.png</label>
-                                </a>
-                                <a href="./assets/2018-02-24-community-day/shiny-badge.jpg" target="_blank">
-                                    <img src="./assets/2018-02-24-community-day/shiny-badge.jpg">
-                                    <label>shiny-badge.png</label>
-                                </a>
-                                <a href="./assets/2018-02-24-community-day/shiny-badge.psd" target="_blank">
-                                    <img src="./img/photoshop-icon.png" class="fileIcon">
-                                    <label>shiny-badge.psd</label>
-                                </a>
-                                <a href="./assets/2018-02-24-community-day/badge.svg" target="_blank">
-                                    <img src="./img/svg-icon.png" class="fileIcon">
-                                    <label>badge.svg</label>
-                                </a>
-                            </div>
-
-                            <hr style="margin:25px;border-color: #555;">
-
-                            <h5>League Event: <span style="font-family:'texgyreadventorregular';">January 2018 Community Day Meetup</span></h5>
-                            <p>
-                                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on January 20, 2018 features a special Pikachu with Surf, 3-hour lures, and increased shiny Pikachu encounter rates.
-                            </p>
-                            <div class="assetGroup">
-                                <a href="./assets/2018-01-20-community-day/badge.png" target="_blank">
-                                    <img src="./assets/2018-01-20-community-day/badge.png">
-                                    <label>badge.png</label>
-                                </a>
-                                <a href="./assets/2018-01-20-community-day/shiny-badge.jpg" target="_blank">
-                                    <img src="./assets/2018-01-20-community-day/shiny-badge.jpg">
-                                    <label>shiny-badge.png</label>
-                                </a>
-                                <a href="./assets/2018-01-20-community-day/shiny-badge.psd" target="_blank">
-                                    <img src="./img/photoshop-icon.png" class="fileIcon">
-                                    <label>shiny-badge.psd</label>
-                                </a>
-                                <a href="./assets/2018-01-20-community-day/badge.svg" target="_blank">
-                                    <img src="./img/svg-icon.png" class="fileIcon">
-                                    <label>badge.svg</label>
-                                </a>
-                            </div>
-
-                            <hr style="margin:25px;border-color: #555;">
-
-                            <h5>League Asset: <span style="font-family:'texgyreadventorregular';">Travelers Card Graphics</span></h5>
-                            <p>
-                                These graphics can be used to showcase an example Travelers Card and to underscore the potential to earn a badge.  JPG images are much smaller in filesize, but have a white background at the corners.  The transparent background images (.PNGs) are much larger, but have transparent corners for a nicer effect. 
-                            </p>
-                            <div class="assetGroup">
-                                <a href="./assets/travelers-cards/transparent-background-card.png" target="_blank">
-                                    <img src="./assets/travelers-cards/transparent-background-card.png">
-                                    <label>transparent-background-card.png</label>
-                                </a>
-                                <a href="./assets/travelers-cards/transparent-background-card-arrow.png" target="_blank">
-                                    <img src="./assets/travelers-cards/transparent-background-card-arrow.png">
-                                    <label>transparent-background-card-arrow.png</label>
-                                </a>
-                                <a href="./assets/travelers-cards/jpg-card.jpg" target="_blank">
-                                    <img src="./assets/travelers-cards/jpg-card.jpg">
-                                    <label>jpg-card.jpg</label>
-                                </a>
-                                <a href="./assets/travelers-cards/jpg-card-arrow.jpg" target="_blank">
-                                    <img src="./assets/travelers-cards/jpg-card-arrow.jpg">
-                                    <label>jpg-card-arrow.jpg</label>
-                                </a>
-                            </div>
-
-                            <hr style="margin:25px;border-color: #555;">
-
-                            <h5>League Asset: <span style="font-family:'texgyreadventorregular';">Logo / Badge Graphic</span></h5>
-                            <p>
-                                The League crest is the mark of membership in the Silph League.  You may feel free to add the League badge to your graphics to denote
-                                that your meetups will be distributing League check-ins.
-                            </p>
-                            <div class="assetGroup">
-                                <a href="./assets/silph-league-logo/logo.png" target="_blank">
-                                    <img src="./assets/silph-league-logo/logo.png">
-                                </a>
-                            </div>
-                        </div>
-                    </div>          
-                </div>
-            </div>
-            
-            <div id="footer" style="text-align:center;font-size:11px;margin:30px 0;text-shadow: 0 0 5px #a8824e;color: rgba(255, 255, 255, 0.68);">
-                ©2018 The Silph Road | All Rights Reserved | <a href="https://twitter.com/TheSilphRoad" target="_blank">@TheSilphRoad</a> | <a href="http://reddit.com/r/TheSilphRoad" target="_blank">/r/TheSilphRoad</a>
-                <br>
-                Pokémon And All Respective Names are Trademark &amp; © of Nintendo 1996-2018			
-                <br>
-                Pokémon GO is Trademark &amp; © of Niantic, Inc.
-                <br>
-                This Silph Road is not affiliated with Niantic Inc., The Pokemon Company, or Nintendo.
-                <br>
-                For inquiries, contact <a href="mailto:team@thesilphroad.com">team@thesilphroad.com</a>
-            </div>
+        <div class="" style="overflow:hidden;height: 230px;position: relative;z-index: 1;">
+          <img src="https://thesilphroad.com/img/silph-league-logo.png"
+            style="height: 180px;z-index: 1;position: relative;margin:23px 0 0;filter: drop-shadow(0px 4px 4px #652f2e);color: #652f2e;">
+          <div
+            style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;background: url(https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?w=1260&amp;h=750&amp;dpr=2&amp;auto=compress&amp;cs=tinysrgb);background-size:cover;background-position: 50% 50%;z-index: 0;filter: invert(1);">
+          </div>
+          <div
+            style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;background: rgba(147, 12, 12, 0.7019607843137254);z-index: 0;">
+          </div>
         </div>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
-    </body>
+
+        <div class="panel"
+          style="width: 100%;border-radius:0;margin:0;border: none;padding: 20px;background: #3d3d3d;color: #f3f2eb;font-size: 13px;line-height: 1.2em;letter-spacing: 0;text-shadow:none;">
+
+          <h2
+            style="margin: 0;font-size:36px;letter-spacing:.1em;line-height:.9em;font-family:'texgyreadventorregular';">
+            League Downloads <br>
+            <span
+              style="font-size:23px;letter-spacing:.3em;font-family:'texgyreadventorbold';text-indent:-0.4em;display:inline-block;">For
+              Community Leaders</span>
+          </h2>
+
+          <hr style="margin: 20px 25px 25px 25px;border-color: #555;"><img
+            src="https://thesilphroad.com/img/icons/badge.png" style="height: 80px;float: left;margin: 5px 20px 10px;">
+          <h3
+            style="font-family: 'texgyreadventorbold';color: #e4c049;margin-bottom: 14px;font-size: 16px;text-align: left;">
+            Free Graphics for Your Meetups and More!
+          </h3>
+          <p style="margin-bottom:10px;text-align: left;">
+            Are you looking to create promotional graphics or swag for your local GO community? As a <i>Silph League</i>
+            member, you may use
+            the following free graphics in your creations!
+          </p>
+          <p style="margin-bottom:10px;text-align: left;">
+            These resources are provided under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+              target="_blank">CC BY-NC-SA</a>
+            license; ie, for non-commercial use only. We also ask that these assets be used in the spirit of the League!
+          </p>
+
+          <hr style="margin:25px;border-color: #555;">
+
+          <div class="text-left">
+
+            <h5>League Event: <span style="font-family:'texgyreadventorregular';">July 2019 Community Day Meetup</span>
+            </h5>
+
+            <p>
+              The <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a> on
+              July 21, 2019 is featuring the water Pokémon Mudkip. There will be 3x catch XP, three hour lures, and an
+              increased chance to score a shiny Mudkip!
+            </p>
+
+            <div class="assetGroup">
+              <a href="./assets/2019-07-21-community-day/badge-large.png" target="_blank">
+                <img src="./assets/2019-07-21-community-day/badge-large.png">
+                <label>badge-large.png</label>
+              </a>
+              <a href="./assets/2019-07-21-community-day/badge.png" target="_blank">
+                <img src="./assets/2019-07-21-community-day/badge.png">
+                <label>badge.png</label>
+              </a>
+              <a href="./assets/2019-07-21-community-day/shiny-badge.jpg" target="_blank">
+                <img src="./assets/2019-07-21-community-day/shiny-badge.jpg">
+                <label>shiny-badge.jpg</label>
+              </a>
+              <a href="./assets/2019-07-21-community-day/shiny-badge.psd" target="_blank">
+                <img src="./img/photoshop-icon.png" class="fileIcon">
+                <label>shiny-badge.psd</label>
+              </a>
+            </div>
+
+            <hr style="margin:25px;border-color: #555;">
+
+            <div class="text-left">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">Dortmund Go Fest 2019</span></h5>
+
+              <p>
+                The <a href="https://pokemongolive.com/events/fest/dortmund/" target="_blank">2019 Dortmund GoFest</a>
+                will be held July 4 through 7 in Westfalenpark Park. Special research, crazy Pokémon spawns, increased
+                shiny rates, and the Mythical Pokémon Jirachi are all featured during this event.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2019-07-04-go-fest-dortmund/badge-large.png" target="_blank">
+                  <img src="./assets/2019-07-04-go-fest-dortmund/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2019-07-04-go-fest-dortmund/badge.png" target="_blank">
+                  <img src="./assets/2019-07-04-go-fest-dortmund/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2019-07-04-go-fest-dortmund/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2019-07-04-go-fest-dortmund/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2019-07-04-go-fest-dortmund/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">Chicago Go Fest 2019</span></h5>
+
+              <p>
+                The <a href="https://pokemongolive.com/events/fest/chicago/" target="_blank">2019 Chicago GoFest</a>
+                will be held June 13 through 16 in Grant Park. Special research, crazy Pokémon spawns, increased shiny
+                rates, and the Mythical Pokémon Jirachi are all featured during this event.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2019-06-13-go-fest-chicago/badge-large.png" target="_blank">
+                  <img src="./assets/2019-06-13-go-fest-chicago/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2019-06-13-go-fest-chicago/badge.png" target="_blank">
+                  <img src="./assets/2019-06-13-go-fest-chicago/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2019-06-13-go-fest-chicago/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2019-06-13-go-fest-chicago/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2019-06-13-go-fest-chicago/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">June 2019 Community Day
+                  Meetup</span></h5>
+
+              <p>
+                The <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community Day</a>
+                on June 8, 2019 will feature an increased Slakoth spawn rate, with higher chances to get it in it's
+                shiny form. Also, special bonuses will be live during the Community Day window: 1/4 Egg hatch distance
+                and 3 hour lures.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2019-06-08-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2019-06-08-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2019-06-08-community-day/badge.png" target="_blank">
+                  <img src="./assets/2019-06-08-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2019-06-08-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2019-06-08-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2019-06-08-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">May 2019 Community Day Meetup</span>
+              </h5>
+
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on May 19, 2019 will feature boosted Torchic spawns and an increased chance of shiny Torchic!
+                Also, special bonuses will be live during the Community Day window: 3x catch Stardust and and 3 hour
+                lures.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2019-05-19-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2019-05-19-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2019-05-19-community-day/badge.png" target="_blank">
+                  <img src="./assets/2019-05-19-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2019-05-19-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2019-05-19-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2019-05-19-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">Earth Day 2019 Meetups</span></h5>
+
+              <p>
+                The in-game <a href="https://nianticlabs.com/blog/earthday2019/" target="_blank">Global Community
+                  Day</a> from April 13 - 28, 2019 will give Pokemon GO and Ingress players a chance to earn unlockables
+                depending on how many volunteers participate in a cleanup event!
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2019-04-13-earth-day/badge-large.png" target="_blank">
+                  <img src="./assets/2019-04-13-earth-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2019-04-13-earth-day/badge.png" target="_blank">
+                  <img src="./assets/2019-04-13-earth-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2019-04-13-earth-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2019-04-13-earth-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">April 2019 Community Day
+                  Meetup</span></h5>
+
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on April 13, 2019 will feature boosted Bagon spawns and an assumedly increased chance of shiny
+                Bagon! Also, special bonuses will be live during the Community Day window: 3x Catch XP and 3 hour lures.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2019-04-13-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2019-04-13-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2019-04-13-community-day/badge.png" target="_blank">
+                  <img src="./assets/2019-04-13-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2019-04-13-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2019-04-13-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2019-04-13-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">March 2019 Community Day
+                  Meetup</span></h5>
+
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on March 23, 2019 will feature boosted Treecko spawns and an increased chance of shiny
+                Treecko! Also, special bonuses will be live during the Community Day window: 1/4 Egg hatch distance and
+                3 hour lures.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2019-03-23-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2019-03-23-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2019-03-23-community-day/badge.png" target="_blank">
+                  <img src="./assets/2019-03-23-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2019-03-23-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2019-03-23-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2019-03-23-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">February 2019 Community Day
+                  Meetup</span></h5>
+
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on February 16, 2019 will feature boosted Swinub spawns and an increased chance of shiny
+                Swinub! Also, special bonuses will be live during the Community Day window: 3x catch startdust and and 3
+                hour lures.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2019-02-01-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2019-02-01-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2019-02-01-community-day/badge.png" target="_blank">
+                  <img src="./assets/2019-02-01-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2019-02-01-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2019-02-01-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2019-02-01-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">January 2019 Community Day
+                  Meetup</span></h5>
+
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on January 12, 2019 will feature boosted Totodile spawns and an assumedly increased chance of
+                shiny Totodile!. Also, special bonuses will be live during the Community Day window: 1/4 egg hatch
+                distance and and 3 hour lures.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2019-01-12-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2019-01-12-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2019-01-12-community-day/badge.png" target="_blank">
+                  <img src="./assets/2019-01-12-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2019-01-12-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2019-01-12-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2019-01-12-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">December 2018 Community Day
+                  Meetup</span></h5>
+
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> from November 30 to December 2, 2018 will feature all 11 species featured in 2018 Community
+                days, including their special moves. Also, on December 1 (per the usual Community Day schedule) special
+                bonuses will be live during the Community Day window: 2x catch XP, 2x catch stardust, half egg
+                distances, and 3 hour lures.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2019-01-12-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2018-12-01-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2018-12-01-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-12-01-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-12-01-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-12-01-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2018-12-01-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">November 2018 Community Day
+                  Meetup</span></h5>
+
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on November 10, 2018 will feature a special Cyndaquil, 2x hatch XP, 2x catch stardust, and
+                likely an increased shiny Cyndaquil encounter rate.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2018-11-10-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2018-11-10-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2018-11-10-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-11-10-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-11-10-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-11-10-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2018-11-10-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+                <a href="./assets/2018-11-10-community-day/meetup-announcement-template.jpg" target="_blank">
+                  <img src="./assets/2018-11-10-community-day/meetup-announcement-template.jpg">
+                  <label>meetup-announcement-template.jpg</label>
+                </a>
+                <a href="./assets/2018-11-10-community-day/meetup-announcement-template.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>meetup-announcement-template.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">October 2018 Community Day
+                  Meetup</span></h5>
+
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on October 21, 2018 will feature a special Beldum, 1/4 Egg hatch distance, 3-hour lures, and
+                likely an increased shiny Beldum encounter rate.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2018-10-21-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2018-10-21-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2018-10-21-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-10-21-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-10-21-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-10-21-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2018-10-21-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+                <a href="./assets/2018-10-21-community-day/meetup-announcement-template.jpg" target="_blank">
+                  <img src="./assets/2018-10-21-community-day/meetup-announcement-template.jpg">
+                  <label>meetup-announcement-template.jpg</label>
+                </a>
+                <a href="./assets/2018-10-21-community-day/meetup-announcement-template.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>meetup-announcement-template.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">September 2018 Community Day
+                  Meetup</span></h5>
+
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on September 22, 2018 will feature a special Chikorita, 3-hour lures, 3x catch XP, and likely
+                an increased shiny Chikorita encounter rate.
+              </p>
+
+              <div class="assetGroup">
+                <a href="./assets/2018-09-22-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2018-09-22-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2018-09-22-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-09-22-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-09-22-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-09-22-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2018-09-22-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+                <a href="./assets/2018-09-22-community-day/meetup-announcement-template.jpg" target="_blank">
+                  <img src="./assets/2018-09-22-community-day/meetup-announcement-template.jpg">
+                  <label>meetup-announcement-template.jpg</label>
+                </a>
+                <a href="./assets/2018-09-22-community-day/meetup-announcement-template.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>meetup-announcement-template.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">August 2018 Community Day
+                  Meetup</span></h5>
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on August 11 and 12, 2018 will feature a special Eevee, 3-hour lures, 3x catch stardust, and
+                likely an increased shiny Eevee encounter rate.
+              </p>
+              <div class="assetGroup">
+                <a href="./assets/2018-08-11-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2018-08-11-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2018-08-11-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-08-11-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-08-11-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-08-11-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.jpg</label>
+                </a>
+                <a href="./assets/2018-08-11-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+                <a href="./assets/2018-08-11-community-day/meetup-announcement-template.jpg" target="_blank">
+                  <img src="./assets/2018-08-11-community-day/meetup-announcement-template.jpg">
+                  <label>meetup-announcement-template.jpg</label>
+                </a>
+                <a href="./assets/2018-08-11-community-day/meetup-announcement-template.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>meetup-announcement-template.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">July 2018 Community Day
+                  Meetup</span></h5>
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on July 8, 2018 will feature a special Squirtle, 3-hour lures, 1/4 egg hatching distance, and
+                possibly an increased shiny Squirtle encounter rate.
+              </p>
+              <div class="assetGroup">
+                <a href="./assets/2018-07-08-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2018-07-08-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2018-07-08-community-day/badge-special-large.png" target="_blank">
+                  <img src="./assets/2018-07-08-community-day/badge-special-large.png">
+                  <label>badge-special-large.png</label>
+                </a>
+                <a href="./assets/2018-07-08-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-07-08-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-07-08-community-day/badge-special.png" target="_blank">
+                  <img src="./assets/2018-07-08-community-day/badge-special.png">
+                  <label>badge-special.png</label>
+                </a>
+                <a href="./assets/2018-07-08-community-day/shiny-badge-blastoise.jpg" target="_blank">
+                  <img src="./assets/2018-07-08-community-day/shiny-badge-blastoise.jpg">
+                  <label>shiny-badge-blastoise.jpg</label>
+                </a>
+                <a href="./assets/2018-07-08-community-day/shiny-badges.jpg" target="_blank">
+                  <img src="./assets/2018-07-08-community-day/shiny-badges.jpg">
+                  <label>shiny-badges.jpg</label>
+                </a>
+                <a href="./assets/2018-07-08-community-day/shiny-badges.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badges.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">June 2018 Community Day
+                  Meetup</span></h5>
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on June 16, 2018 will feature a special Larvitar, 3-hour lures, 3x catch XP, and possibly an
+                increased shiny Larvitar encounter rate.
+              </p>
+              <div class="assetGroup">
+                <a href="./assets/2018-06-16-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-06-16-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-06-16-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2018-06-16-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2018-06-16-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-06-16-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.png</label>
+                </a>
+                <a href="./assets/2018-06-16-community-day/meetup-announcement-template.jpg" target="_blank">
+                  <img src="./assets/2018-06-16-community-day/meetup-announcement-template.jpg">
+                  <label>meetup-announcement-template.jpg</label>
+                </a>
+                <a href="./assets/2018-06-16-community-day/meetup-announcement-template.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>meetup-announcement-template.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">May 2018 Community Day Meetup</span>
+              </h5>
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on May 19, 2018 will feature a special Charmander, 3-hour lures, 3x catch stardust, and
+                possibly an increased shiny Charmander encounter rate.
+              </p>
+              <div class="assetGroup">
+                <a href="./assets/2018-05-19-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-05-19-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-05-19-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2018-05-19-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2018-05-19-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-05-19-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.png</label>
+                </a>
+                <a href="./assets/2018-05-19-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">April 2018 Community Day
+                  Meetup</span></h5>
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on April 15, 2018 will feature a special Mareep, 3-hour lures, 1/4 egg hatch distance, and
+                possibly an increased shiny Mareep encounter rate.
+              </p>
+              <div class="assetGroup">
+                <a href="./assets/2018-04-15-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-04-15-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-04-15-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2018-04-15-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2018-04-15-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-04-15-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.png</label>
+                </a>
+                <a href="./assets/2018-04-15-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">March 2018 Community Day
+                  Meetup</span></h5>
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on March 25, 2018 featured a special Bulbasaur, 3-hour lures, 3x catch XP, and possibly an
+                increased shiny Bulbasaur encounter rate.
+              </p>
+              <div class="assetGroup">
+                <a href="./assets/2018-03-25-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-03-25-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-03-25-community-day/badge-large.png" target="_blank">
+                  <img src="./assets/2018-03-25-community-day/badge-large.png">
+                  <label>badge-large.png</label>
+                </a>
+                <a href="./assets/2018-03-25-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-03-25-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.png</label>
+                </a>
+                <a href="./assets/2018-03-25-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">February 2018 Community Day
+                  Meetup</span></h5>
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on February 24, 2018 featured a special Dratini, 3-hour lures, 3x catch stardust, and an
+                increased shiny Dratini encounter rate.
+              </p>
+              <div class="assetGroup">
+                <a href="./assets/2018-02-24-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-02-24-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-02-24-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-02-24-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.png</label>
+                </a>
+                <a href="./assets/2018-02-24-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+                <a href="./assets/2018-02-24-community-day/badge.svg" target="_blank">
+                  <img src="./img/svg-icon.png" class="fileIcon">
+                  <label>badge.svg</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Event: <span style="font-family:'texgyreadventorregular';">January 2018 Community Day
+                  Meetup</span></h5>
+              <p>
+                The in-game <a href="https://pokemongolive.com/events/community-day/" target="_blank">Global Community
+                  Day</a> on January 20, 2018 features a special Pikachu with Surf, 3-hour lures, and increased shiny
+                Pikachu encounter rates.
+              </p>
+              <div class="assetGroup">
+                <a href="./assets/2018-01-20-community-day/badge.png" target="_blank">
+                  <img src="./assets/2018-01-20-community-day/badge.png">
+                  <label>badge.png</label>
+                </a>
+                <a href="./assets/2018-01-20-community-day/shiny-badge.jpg" target="_blank">
+                  <img src="./assets/2018-01-20-community-day/shiny-badge.jpg">
+                  <label>shiny-badge.png</label>
+                </a>
+                <a href="./assets/2018-01-20-community-day/shiny-badge.psd" target="_blank">
+                  <img src="./img/photoshop-icon.png" class="fileIcon">
+                  <label>shiny-badge.psd</label>
+                </a>
+                <a href="./assets/2018-01-20-community-day/badge.svg" target="_blank">
+                  <img src="./img/svg-icon.png" class="fileIcon">
+                  <label>badge.svg</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Asset: <span style="font-family:'texgyreadventorregular';">Travelers Card Graphics</span></h5>
+              <p>
+                These graphics can be used to showcase an example Travelers Card and to underscore the potential to earn
+                a badge. JPG images are much smaller in filesize, but have a white background at the corners. The
+                transparent background images (.PNGs) are much larger, but have transparent corners for a nicer effect.
+              </p>
+              <div class="assetGroup">
+                <a href="./assets/travelers-cards/transparent-background-card.png" target="_blank">
+                  <img src="./assets/travelers-cards/transparent-background-card.png">
+                  <label>transparent-background-card.png</label>
+                </a>
+                <a href="./assets/travelers-cards/transparent-background-card-arrow.png" target="_blank">
+                  <img src="./assets/travelers-cards/transparent-background-card-arrow.png">
+                  <label>transparent-background-card-arrow.png</label>
+                </a>
+                <a href="./assets/travelers-cards/jpg-card.jpg" target="_blank">
+                  <img src="./assets/travelers-cards/jpg-card.jpg">
+                  <label>jpg-card.jpg</label>
+                </a>
+                <a href="./assets/travelers-cards/jpg-card-arrow.jpg" target="_blank">
+                  <img src="./assets/travelers-cards/jpg-card-arrow.jpg">
+                  <label>jpg-card-arrow.jpg</label>
+                </a>
+              </div>
+
+              <hr style="margin:25px;border-color: #555;">
+
+              <h5>League Asset: <span style="font-family:'texgyreadventorregular';">Logo / Badge Graphic</span></h5>
+              <p>
+                The League crest is the mark of membership in the Silph League. You may feel free to add the League
+                badge to your graphics to denote
+                that your meetups will be distributing League check-ins.
+              </p>
+              <div class="assetGroup">
+                <a href="./assets/silph-league-logo/logo.png" target="_blank">
+                  <img src="./assets/silph-league-logo/logo.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer"
+        style="text-align:center;font-size:11px;margin:30px 0;text-shadow: 0 0 5px #a8824e;color: rgba(255, 255, 255, 0.68);">
+        ©2018 The Silph Road | All Rights Reserved | <a href="https://twitter.com/TheSilphRoad"
+          target="_blank">@TheSilphRoad</a> | <a href="http://reddit.com/r/TheSilphRoad"
+          target="_blank">/r/TheSilphRoad</a>
+        <br>
+        Pokémon And All Respective Names are Trademark &amp; © of Nintendo 1996-2018
+        <br>
+        Pokémon GO is Trademark &amp; © of Niantic, Inc.
+        <br>
+        This Silph Road is not affiliated with Niantic Inc., The Pokemon Company, or Nintendo.
+        <br>
+        For inquiries, contact <a href="mailto:team@thesilphroad.com">team@thesilphroad.com</a>
+      </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
