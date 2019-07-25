@@ -97,3 +97,60 @@ a:hover {
   text-align: center;
   padding: 10px 3px 0;
 }
+
+.asset-section {
+  display: none;
+}
+
+.asset-section.show {
+  display: block;
+}
+
+.filters {
+  margin: 25px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filter-section {
+  margin-right: 40px;
+}
+
+.filter-section:last-child {
+  margin-right: 0;
+}
+
+.filter-section > .options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-section > .options > label > span {
+  font-weight: normal;
+  display: block;
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 3px;
+  border-bottom: solid 2px white;
+  cursor: pointer;
+}
+
+.filter-section > .options > label > input {
+  display: none;
+}
+
+.filter-section > .options > label > input:checked + span {
+  color: #E4C049;
+  border-color: #F1CC55;
+}
+
+.filter-section > .options > label > span:hover {
+  color: #F1CC55;
+  border-color: #F1CC55;
+}
+
+.filter-section > .options > label:last-child > span {
+  margin-right: 0;
+}
