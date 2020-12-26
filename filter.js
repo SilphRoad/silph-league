@@ -24,7 +24,7 @@ const updateFilter = (type = typeSelection, date = dateSelection) => {
   assets.forEach(asset => {
     if (typeSelection === 'all' || asset.dataset.type === typeSelection) {
       // We want to make sure that assets without a year are let through
-      if (asset.dataset.year === dateSelection || (typeSelection === 'league' && asset.dataset.type === typeSelection)) {
+      if (asset.dataset.year === dateSelection || asset.dataset.type === 'league') {
         asset.classList.add('show')
       } else {
         asset.classList.remove('show')
