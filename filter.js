@@ -6,7 +6,7 @@ for (let i = 0; i < assetSections.length; i++) {
 }
 
 let typeSelection = 'all'
-let dateSelection = '2021'
+let dateSelection = '2022'
 
 const typeRadio = document.getElementsByName('type')
 for (let i = 0; i < typeRadio.length; i++) {
