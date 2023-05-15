@@ -5,7 +5,7 @@ for (let i = 0; i < assetSections.length; i++) {
   assets.push(assetSections[i])
 }
 
-let typeSelection = 'all'
+let typeSelection = 'hello-world'
 let dateSelection = '2023'
 
 const typeRadio = document.getElementsByName('type')
