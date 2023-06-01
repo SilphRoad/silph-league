@@ -64,6 +64,23 @@ a:hover {
   color: #F1CC55;
 }
 
+.psdfileIcon {
+  position: relative;
+  display: inline-block;
+}
+
+.psdfileIcon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px; /* Adjust the width as per your needs */
+  height: 20px; /* Adjust the height as per your needs */
+  background: url(https://icon-library.com/images/psd-icon/psd-icon-15.jpg) no-repeat;
+  background-size: cover;
+}
+
+
 .assetGroup {
   text-align: left;
   padding: 0 20px;
