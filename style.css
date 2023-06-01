@@ -66,7 +66,6 @@ a:hover {
 
 .psdfileIcon {
   position: relative;
-  display: inline-block;
 }
 
 .psdfileIcon::after {
@@ -79,6 +78,7 @@ a:hover {
   background: url(https://icon-library.com/images/psd-icon/psd-icon-15.jpg) no-repeat;
   background-size: cover;
 }
+
 
 
 .assetGroup {
